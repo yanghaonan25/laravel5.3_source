@@ -1,4 +1,7 @@
 <?php
+/*
+** laravel 入口文件 
+*/
 
 /**
  * Laravel - A PHP Framework For Web Artisans
@@ -18,7 +21,9 @@
 | loading any of our classes later on. It feels nice to relax.
 |
 */
-
+// laravel使用的自动加载机制. 实际是由composer提供的. 
+// 每次composer install|update 时,都会在 vender/composer文件夹中生成自动加载文件.
+// 即使删除了这些文件,执行composer install|update命令还会再次生成这些文件
 require __DIR__.'/../bootstrap/autoload.php';
 
 /*

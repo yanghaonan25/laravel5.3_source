@@ -1,5 +1,6 @@
 <?php
 
+//定义全局常量,用于记录laravel处理请求开始时间
 define('LARAVEL_START', microtime(true));
 
 /*
@@ -13,7 +14,7 @@ define('LARAVEL_START', microtime(true));
 | loading of any our classes "manually". Feels great to relax.
 |
 */
-
+//加载composer的自动加载文件
 require __DIR__.'/../vendor/autoload.php';
 
 /*
